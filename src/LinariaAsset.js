@@ -1,7 +1,7 @@
 const path = require('path');
 const Module = require('module');
-const JSAsset = require('parcel/src/assets/JSAsset');
-const transform = require('linaria/lib/transform');
+const JSAsset = require('parcel-bundler/src/assets/JSAsset');
+const transform = require('@brandonkal/linaria/lib/transform').default;
 
 const RESULT = Symbol('linaria-transform-result');
 
@@ -53,7 +53,7 @@ class LinariaAsset extends JSAsset {
       output.push({
         type: 'css',
         value: cssText,
-        final: true,
+        // final: true,
       });
 
       if (this.options.hmr) {
