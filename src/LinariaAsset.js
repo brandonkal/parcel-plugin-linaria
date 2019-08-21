@@ -1,7 +1,7 @@
 const path = require('path');
 const Module = require('module');
 const JSAsset = require('parcel-bundler/src/assets/JSAsset');
-const transform = require('@brandonkal/linaria/lib/transform').default;
+const transform = require('@brandonkal/linaria/lib/utils/transform').default;
 
 const RESULT = Symbol('linaria-transform-result');
 
